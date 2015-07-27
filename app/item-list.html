@@ -1,0 +1,381 @@
+<!doctype html>
+<html class="no-js" lang="zh-hans">
+
+	<head>
+		<meta charset="utf-8">
+		<title>天水跳蚤 | 专业的二手闲置物品发布平台</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+		<!-- build:css(.) styles/vendor.css -->
+		<!-- bower:css -->
+		<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+		<!-- endbower -->
+		<!-- endbuild -->
+		<!-- build:css(.tmp) styles/main.css -->
+		<link rel="stylesheet" href="styles/main.css">
+		<!-- endbuild -->
+
+		<!-- build:js scripts/vendor/modernizr.js -->
+		<script src="bower_components/modernizr/modernizr.js"></script>
+		<!-- endbuild -->
+		<link rel="stylesheet" href="/bower_components/font-awesome-min/css/font-awesome.min.css">
+	</head>
+
+	<body>
+		<!--[if lt IE 10]>
+<p class="container alert alert-info" role="alert">
+    您的浏览器已经成为古董，请为了安全。<a href="http://browsehappy.com/" target="_blank">请尽快更新</a></p>
+<![endif]-->
+
+		<!-- Navigation -->
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<div class="navbar-header">
+						<a href="../" class="navbar-brand navbar-left">天水跳蚤
+                </a>
+						<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+
+					<div class="collapse navbar-collapse" id="navbar-main">
+                        <form action="/search" class="navbar-form  navbar-left  hidden-sm">
+                            <button type="submit" class="btn btn-link"><span class="sr-only">搜索</span><span class="glyphicon glyphicon-search"></span></button>
+                            <input id="searchBox" name="q" type="text" placeholder="搜索闲置" class="form-control" value="">
+                        </form>
+						<ul class="nav navbar-nav">
+							<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="item-list.html" id="themes">闲置物品
+                        <span class="caret"></span></a>
+								<ul class="dropdown-menu" aria-labelledby="themes">
+									<li><a href="#">数码科技</a>
+									</li>
+									<li><a href="#">交通工具</a>
+									</li>
+									<li><a href="#">生活家居</a>
+									</li>
+									<li><a href="#">宝宝用品</a>
+									</li>
+									<li><a href="#">女人爱物</a>
+									</li>
+									<li><a href="#">音乐乐器</a>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">活动</a>
+							</li>
+							<li><a href="#">博客</a>
+							</li>
+                            <li class="visible-xs"><a href="#">消息</a>
+                            </li>
+						</ul>
+                        <ul class="nav navbar-nav navbar-right hidden-xs">
+                            <li><a href="#"><i class="fa fa-envelope fa-fw"></i> <span class="badge">42</span></a></li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="user.html" id="users"><i class="fa fa-user fa-fw"></i> 用户
+                                <span class="fa fa-caret-down"></span></a>
+                                <ul class="dropdown-menu" aria-labelledby="users">
+                                    <li><a href="#">我的闲置</a></li>
+                                    <li><a href="#">我的收藏</a></li>
+                                    <li><a href="#">账号设置</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">退出</a></li>
+                                    <li><a href="#">帮助中心</a></li>
+                                    <li><a href="#">意见反馈</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-primary btn-sm navbar-btn navbar-right">发布闲置</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- end Navigation -->
+
+		<!-- Page Heading/Breadcrumbs -->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1 class="page-header">闲置物品
+            <small>闲置也许有价</small>
+                   </h1>
+					<ol class="breadcrumb">
+						<li><a href="index.html">首页</a>
+						</li>
+						<li class="active">闲置物品</li>
+						<nav class="pull-right">
+							<ul class="list-inline hidden-xs">
+								<li><a href="#"><i class="fa fa-th-large"></i></a></li>
+								<li><a href="#"><i class="fa fa-th-list"></i></a></li>
+							</ul>
+						</nav>
+					</ol>
+				</div>
+			</div>
+			<!-- / .row -->
+
+			<!-- Items classified column -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<nav id="filter" class="text-center">
+							<ul>
+								<li><a href="#" class="btn btn-primary btn-xs" data-filter="*">全部</a>
+								</li>
+								<li><a href="#" class="btn btn-primary btn-xs" data-filter=".digital">电子数码</a>
+								</li>
+								<li><a href="#" class="btn btn-primary btn-xs" data-filter=".transportation">交通工具</a>
+								</li>
+								<li><a href="#" class="btn btn-primary btn-xs" data-filter=".living_home">生活家居</a>
+								</li>
+								<li><a href="#" class="btn btn-primary btn-xs" data-filter=".baby_supplies">宝宝用品</a>
+								</li>
+								<li><a href="#" class="btn btn-primary btn-xs" data-filter=".women_goods">女人爱物</a>
+								</li>
+								<li><a href="#" class="btn btn-primary btn-xs" data-filter=".instruments">音乐乐器</a>
+								</li>
+							</ul>
+						</nav>
+
+					</div>
+				</div>
+			</div>
+			<!-- itemlist-content -->
+			<div class="row">
+				<div class="col-md-3 img-portfolio">
+					<a href="portfolio-item.html">
+						<img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
+					</a>
+				</div>
+				<div class="col-md-3 img-portfolio">
+					<a href="portfolio-item.html">
+						<img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
+					</a>
+				</div>
+				<div class="col-md-3 img-portfolio">
+					<a href="portfolio-item.html">
+						<img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
+					</a>
+				</div>
+				<div class="col-md-3 img-portfolio">
+					<a href="portfolio-item.html">
+						<img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
+					</a>
+				</div>
+			</div>
+			<!-- /.row -->
+			<div class="row">
+				<div class="col-md-3 img-portfolio">
+					<a href="portfolio-item.html">
+						<img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
+					</a>
+				</div>
+				<div class="col-md-3 img-portfolio">
+					<a href="portfolio-item.html">
+						<img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
+					</a>
+				</div>
+				<div class="col-md-3 img-portfolio">
+					<a href="portfolio-item.html">
+						<img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
+					</a>
+				</div>
+				<div class="col-md-3 img-portfolio">
+					<a href="portfolio-item.html">
+						<img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
+					</a>
+				</div>
+			</div>
+			<!-- /.row -->
+			<div class="row">
+				<div class="col-md-3 img-portfolio">
+					<a href="portfolio-item.html">
+						<img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
+					</a>
+				</div>
+				<div class="col-md-3 img-portfolio">
+					<a href="portfolio-item.html">
+						<img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
+					</a>
+				</div>
+				<div class="col-md-3 img-portfolio">
+					<a href="portfolio-item.html">
+						<img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
+					</a>
+				</div>
+				<div class="col-md-3 img-portfolio">
+					<a href="portfolio-item.html">
+						<img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
+					</a>
+				</div>
+			</div>
+			<!-- /.row -->
+			<!-- Pagination -->
+			<div class="row text-center">
+				<div class="col-lg-12">
+					<ul class="pagination">
+						<li>
+							<a href="#">«</a>
+						</li>
+						<li class="active">
+							<a href="#">1</a>
+						</li>
+						<li>
+							<a href="#">2</a>
+						</li>
+						<li>
+							<a href="#">3</a>
+						</li>
+						<li>
+							<a href="#">4</a>
+						</li>
+						<li>
+							<a href="#">5</a>
+						</li>
+						<li>
+							<a href="#">»</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /.row -->
+			<!-- end itemlist-content -->
+		</div>
+
+		<!-- footer -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h2>TAG</h2>
+						<ul class="list-inline">
+							<li><a href="#">xbox360</a></li>
+							<li><a href="#">吉他</a></li>
+							<li><a href="#">phone6plus</a></li>
+							<li><a href="#">MacBookPro</a></li>
+							<li><a href="#">Note3</a></li>
+							<li><a href="#">xbox360</a></li>
+							<li><a href="#">吉他</a></li>
+							<li><a href="#">phone6plus</a></li>
+							<li><a href="#">MacBookPro</a></li>
+							<li><a href="#">Note3</a></li>
+							<li><a href="#">xbox360</a></li>
+							<li><a href="#">吉他</a></li>
+							<li><a href="#">phone6plus</a></li>
+							<li><a href="#">MacBookPro</a></li>
+							<li><a href="#">Note3</a></li>
+							<li><a href="#">xbox360</a></li>
+							<li><a href="#">吉他</a></li>
+							<li><a href="#">phone6plus</a></li>
+							<li><a href="#">MacBookPro</a></li>
+							<li><a href="#">Note3</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h2>帮助中心</h2>
+						<ul>
+							<li><a href="#">新手导航</a></li>
+							<li><a href="#">我是卖家</a></li>
+							<li><a href="#">我是买家</a></li>
+							<li><a href="#">安全问题</a></li>
+							<li><a href="#">网站规则</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h2>关于我们</h2>
+						<ul>
+							<li><a href="#">关于我们</a></li>
+							<li><a href="#">网站动态</a></li>
+							<li><a href="#">免责声明</a></li>
+							<li><a href="#">隐私声明</a></li>
+							<li><a href="#">版权声明</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="copyright">
+				<div class="container">
+					<hr />
+					<div class="row">
+						<div class="col-md-12">
+							<div class="col-md-5">
+								<p>Copyright &copy; 2015 天水跳蚤</p>
+								<p>Made by
+									<a href="http://lekee.cc" rel="nofollow">lekee.cc | 乐可 </a>
+									</br>有问题请与我们联系
+									<a href="mailto:service@tsflea.com">service@tsflea.com</a>
+								</p>
+							</div>
+							<div class="col-md-7 col-sm-12">
+								<ul class="social-network social-circle">
+									<li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a>
+									</li>
+									<li><a href="#" class="icoQq" title="QQ"><i class="fa fa-qq"></i></a>
+									</li>
+									<li><a href="#" class="icoWeibo" title="新浪微博"><i class="fa fa-weibo"></i></a>
+									</li>
+									<li><a href="#" class="icoWeixin" title="微信"><i class="fa fa-weixin"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end footer -->
+
+		<!-- senr
+<!-- build:js(.) scripts/vendor.js -->
+		<!-- bower:js -->
+		<script src="/bower_components/modernizr/modernizr.js"></script>
+		<script src="/bower_components/jquery/dist/jquery.js"></script>
+		<!-- endbower -->
+		<!-- endbuild -->
+
+		<!-- build:js(.) scripts/plugins.js -->
+		<script src="/bower_components/bootstrap/js/affix.js"></script>
+		<script src="/bower_components/bootstrap/js/alert.js"></script>
+		<script src="/bower_components/bootstrap/js/dropdown.js"></script>
+		<script src="/bower_components/bootstrap/js/tooltip.js"></script>
+		<script src="/bower_components/bootstrap/js/modal.js"></script>
+		<script src="/bower_components/bootstrap/js/transition.js"></script>
+		<script src="/bower_components/bootstrap/js/button.js"></script>
+		<script src="/bower_components/bootstrap/js/popover.js"></script>
+		<script src="/bower_components/bootstrap/js/carousel.js"></script>
+		<script src="/bower_components/bootstrap/js/scrollspy.js"></script>
+		<script src="/bower_components/bootstrap/js/collapse.js"></script>
+		<script src="/bower_components/bootstrap/js/tab.js"></script>
+		<!-- endbuild -->
+
+		<!-- build:js scripts/main.js -->
+		<script src="scripts/main.js"></script>
+		<!-- endbuild -->
+
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			(function(b, o, i, l, e, r) {
+				b.GoogleAnalyticsObject = l;
+				b[l] || (b[l] =
+					function() {
+						(b[l].q = b[l].q || []).push(arguments)
+					});
+				b[l].l = +new Date;
+				e = o.createElement(i);
+				r = o.getElementsByTagName(i)[0];
+				e.src = 'https://www.google-analytics.com/analytics.js';
+				r.parentNode.insertBefore(e, r)
+			}(window, document, 'script', 'ga'));
+			ga('create', 'UA-XXXXX-X');
+			ga('send', 'pageview');
+		</script>
+	</body>
+
+</html>
