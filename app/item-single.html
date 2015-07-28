@@ -37,15 +37,13 @@
 			<div class="navbar-inner">
 				<div class="container">
 					<div class="navbar-header">
-						<a href="../" class="navbar-brand navbar-left">天水跳蚤
-                </a>
+						<a href="../" class="navbar-brand navbar-left">天水跳蚤</a>
 						<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
 					</div>
-
 					<div class="collapse navbar-collapse" id="navbar-main">
 						<form action="/search" class="navbar-form  navbar-left  hidden-sm">
 							<button type="submit" class="btn btn-link"><span class="sr-only">搜索</span><span class="glyphicon glyphicon-search"></span></button>
@@ -79,7 +77,7 @@
 						<ul class="nav navbar-nav navbar-right hidden-xs">
 							<li><a href="#"><i class="fa fa-envelope fa-fw"></i> <span class="badge">42</span></a></li>
 							<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="user.html" id="users"><i class="fa fa-user fa-fw"></i> 用户
-                                <span class="fa fa-caret-down"></span></a>
+                        <span class="fa fa-caret-down"></span></a>
 								<ul class="dropdown-menu" aria-labelledby="users">
 									<li><a href="#">我的闲置</a></li>
 									<li><a href="#">我的收藏</a></li>
@@ -102,149 +100,119 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<h1 class="page-header">闲置物品<small>闲置也许有价</small>
-                   </h1>
 					<ol class="breadcrumb">
 						<li><a href="index.html">首页</a>
 						</li>
-						<li class="active">闲置物品</li>
-						<nav class="pull-right">
-							<ul class="list-inline hidden-xs">
-								<li><a href="#"><i class="fa fa-th-large"></i></a></li>
-								<li><a href="#"><i class="fa fa-th-list"></i></a></li>
-							</ul>
-						</nav>
+						<li><a href="item-list.html">闲置物品</a></li>
+						<li class="active"><a href="item-list.html">数码科技</a></li>
 					</ol>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="well well-sm">
+						<ul class="list-inline">
+							<li><i class="fa fa-user"></i> 三弦</li>
+							<li class="date"><i class="fa fa-calendar"></i> 发布于 2015-11-12</li>
+							<li><i class="fa fa-eye"></i> 浏览<em>59</em>次</li>
+							<li class="pull-right"><small>举报该物品</small></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<!-- / .row -->
 		</div>
-		<!-- Items classified column -->
+
+		<!-- 物品内容 -->
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
-					<nav id="filter" class="text-center">
-						<ul>
-							<li><a href="#" class="btn btn-primary btn-xs" data-filter="*">全部</a>
-							</li>
-							<li><a href="#" class="btn btn-primary btn-xs" data-filter=".digital">电子数码</a>
-							</li>
-							<li><a href="#" class="btn btn-primary btn-xs" data-filter=".transportation">交通工具</a>
-							</li>
-							<li><a href="#" class="btn btn-primary btn-xs" data-filter=".living_home">生活家居</a>
-							</li>
-							<li><a href="#" class="btn btn-primary btn-xs" data-filter=".baby_supplies">宝宝用品</a>
-							</li>
-							<li><a href="#" class="btn btn-primary btn-xs" data-filter=".women_goods">女人爱物</a>
-							</li>
-							<li><a href="#" class="btn btn-primary btn-xs" data-filter=".instruments">音乐乐器</a>
-							</li>
-						</ul>
-					</nav>
+				<div class="col-md-7">
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+							<li data-target="#carousel-example-generic" data-slide-to="1" class="active"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+						</ol>
 
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+							<div class="item">
+								<img class="img-responsive" src="http://placehold.it/660x440" alt="">
+							</div>
+							<div class="item active">
+								<img class="img-responsive" src="http://placehold.it/660x440" alt="">
+							</div>
+							<div class="item">
+								<img class="img-responsive" src="http://placehold.it/660x440" alt="">
+							</div>
+						</div>
+
+						<!-- Controls -->
+						<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+						</a>
+						<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-md-5">
+					<h3>三星note3 I9500</h3> 转卖价：
+					<p class="text-info"><em> ￥440 </em></p>
+					<hr />
+					<ul>
+						<li>原 价： ￥2000</li>
+						<li>成 色： 非全新</li>
+						<li>所 在 地： 秦州</li>
+						<li>交易方式： 同城交易</li>
+						<li>联系方式： <a href="#" class="bth btn-success">与他对话</a></li>
+					</ul>
+					<button class="btn btn-primary"><span class="badge">21</span> 分享</button>
+					<button class="btn btn-primary"><span class="badge">21</span> 收藏订阅</button>
+					<div class="list-group">
+						<a href="#" class="list-group-item active">
+							<h4 class="list-group-item-heading">List group item heading</h4>
+							<p class="list-group-item-text">...</p>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
-		<!-- itemlist-content -->
-		<div class="row">
-			<div class="col-md-3 img-portfolio">
-				<a href="portfolio-item.html">
-					<img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-				</a>
+
+		<!-- 相关物品 -->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h3 class="page-header">相关闲置</h3>
+				</div>
+
+				<div class="col-sm-3 col-xs-6">
+					<a href="#">
+						<img class="img-responsive img-hover img-related" src="http://placehold.it/500x300" alt="">
+					</a>
+				</div>
+
+				<div class="col-sm-3 col-xs-6">
+					<a href="#">
+						<img class="img-responsive img-hover img-related" src="http://placehold.it/500x300" alt="">
+					</a>
+				</div>
+
+				<div class="col-sm-3 col-xs-6">
+					<a href="#">
+						<img class="img-responsive img-hover img-related" src="http://placehold.it/500x300" alt="">
+					</a>
+				</div>
+
+				<div class="col-sm-3 col-xs-6">
+					<a href="#">
+						<img class="img-responsive img-hover img-related" src="http://placehold.it/500x300" alt="">
+					</a>
+				</div>
 			</div>
-			<div class="col-md-3 img-portfolio">
-				<a href="portfolio-item.html">
-					<img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-				</a>
-			</div>
-			<div class="col-md-3 img-portfolio">
-				<a href="portfolio-item.html">
-					<img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-				</a>
-			</div>
-			<div class="col-md-3 img-portfolio">
-				<a href="portfolio-item.html">
-					<img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-				</a>
-			</div>
-		</div>
-		<!-- /.row -->
-		<div class="row">
-			<div class="col-md-3 img-portfolio">
-				<a href="portfolio-item.html">
-					<img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-				</a>
-			</div>
-			<div class="col-md-3 img-portfolio">
-				<a href="portfolio-item.html">
-					<img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-				</a>
-			</div>
-			<div class="col-md-3 img-portfolio">
-				<a href="portfolio-item.html">
-					<img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-				</a>
-			</div>
-			<div class="col-md-3 img-portfolio">
-				<a href="portfolio-item.html">
-					<img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-				</a>
-			</div>
-		</div>
-		<!-- /.row -->
-		<div class="row">
-			<div class="col-md-3 img-portfolio">
-				<a href="portfolio-item.html">
-					<img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-				</a>
-			</div>
-			<div class="col-md-3 img-portfolio">
-				<a href="portfolio-item.html">
-					<img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-				</a>
-			</div>
-			<div class="col-md-3 img-portfolio">
-				<a href="portfolio-item.html">
-					<img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-				</a>
-			</div>
-			<div class="col-md-3 img-portfolio">
-				<a href="portfolio-item.html">
-					<img class="img-responsive img-hover" src="http://placehold.it/750x450" alt="">
-				</a>
-			</div>
-		</div>
-		<!-- /.row -->
-		<!-- Pagination -->
-		<div class="row text-center">
-			<div class="col-lg-12">
-				<ul class="pagination">
-					<li>
-						<a href="#">«</a>
-					</li>
-					<li class="active">
-						<a href="#">1</a>
-					</li>
-					<li>
-						<a href="#">2</a>
-					</li>
-					<li>
-						<a href="#">3</a>
-					</li>
-					<li>
-						<a href="#">4</a>
-					</li>
-					<li>
-						<a href="#">5</a>
-					</li>
-					<li>
-						<a href="#">»</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<!-- /.row -->
-		<!-- end itemlist-content -->
+			<!-- .row -->
 		</div>
 
 		<!-- footer -->
